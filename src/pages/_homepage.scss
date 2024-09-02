@@ -1,0 +1,167 @@
+@mixin header {
+    font-size: 60px;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 500;
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 60px;
+    background: url(/home-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10.5rem 0;
+    width: 100%;
+
+    h1 {
+        font-family: 'Playfair Display', sans-serif;
+        font-size: 72px;
+        font-weight: 500;
+        color: #2C2F24;
+        line-height: 1;
+    }
+
+    p {
+        margin-top: 40px;
+        font-weight: 600;
+    }
+
+    .btns {
+        display: flex;
+        gap: 10px;
+    }
+}
+
+#about {
+    width: 100%;
+
+    video {
+        width: 100%;
+        // height: 80vh;
+    }
+}
+
+#recipes {
+    padding: 40px 60px;
+
+    h2 {
+        @include header();
+    }
+
+    .wrapper {
+        display: flex;
+        padding: 70px;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+
+        .card {
+            width: 20%;
+
+            .img {
+                width: 100%;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            h3 {
+                font-size: 20px;
+                margin: 15px 0;
+            }
+
+            p {
+                font-size: 16px;
+                margin-bottom: 25px;
+            }
+
+            a {
+                text-decoration: none;
+                padding: 10px 15px;
+                border: 1.5px solid #3634AD;
+                border-radius: 1000000px;
+                font-size: 14px;
+                background: #3634AD;
+                color: #fff;
+                font-weight: 700;
+
+                &:hover {
+                    background: #fff;
+                    border: 1.5px solid #2C2F24;
+                    color: #2C2F24;
+                }
+            }
+        }
+    }
+}
+
+#contact {
+    height: 60vh;
+    background: #f0f0f0;
+    position: relative;
+
+    .contact-inner {
+        margin: 0 auto;
+        width: 950px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -40%;
+        
+        h2 {
+            @include header();
+            text-align: center;
+        }
+        
+        p {
+            text-align: center;
+            margin: 40px;
+        }
+        
+        form {
+            box-shadow: 0px 0px 20px #e9e9e9;
+            background: #fff;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            border-radius: 20px;
+            padding: 30px 50px;
+
+
+            .formWrapper {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+
+                label {
+                    font-weight: 600;
+                }
+
+                input {
+                    padding: 20px;
+                    border-radius: 1000px;
+                    border: 1.5px solid #ccc;
+                }
+            }
+
+            .formWrapper:nth-child(5) {
+                grid-column: span 2;
+            }
+
+            .submit {
+                grid-column: span 2;
+                background: #3634AD;
+                padding: 20px;
+                border-radius: 1000px;
+                border: none;
+                color: #fff;
+            }
+        }
+    }
+}
