@@ -6,6 +6,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination, Navigation } from 'swiper/modules';
+import SwiperNavButtons from '../SwiperNavButtons';
 
 const HomeRecipes = () => {
   return (
@@ -18,7 +19,7 @@ const HomeRecipes = () => {
         pagination={{
           clickable: true,
         }}
-        navigation={true}
+        // navigation={true}
         modules={[Pagination, Navigation]}
         className="mySwiper wrapper">
         {data && data.recCards.map(card => {
@@ -35,6 +36,7 @@ const HomeRecipes = () => {
             </SwiperSlide>
           )
         })}
+        <SwiperNavButtons/>
       </Swiper>
     </section>
   )

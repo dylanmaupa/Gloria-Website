@@ -14,8 +14,8 @@ const Navbar = () => {
     <>
       <div className="info">
         <div className="text">
-          <p>(414) 857 - 0107</p>
-          <p>yummy@bistrobliss</p>
+          <p>(+263)78 812 3123</p>
+          <p>info@gloria.co.zw</p>
         </div>
         <div className="socials">
           <img src={icon1} alt="" />
