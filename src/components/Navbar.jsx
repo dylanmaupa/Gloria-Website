@@ -31,10 +31,10 @@ const Navbar = () => {
         <ul className={menuOpen ? "nav-links menuActive": "nav-links"}>
           <Link to={'/'}><li>Home</li></Link>
           <li>About</li>
-          <li>Menu</li>
-          <li>Pages</li>
-          <li>Contact</li>
-          <Link>Book A Table</Link>
+          <li>Recipes</li>
+          <li>Gallery</li>
+          <li>FAQs</li>
+          <Link>Contact Us</Link>
         </ul>
         <LuCakeSlice onClick={() => setMenuOpen(!menuOpen)} className={menuOpen ? "hamburger hamburgerActive" : "hamburger"} />
       </div>
