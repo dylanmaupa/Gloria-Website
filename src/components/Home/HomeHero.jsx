@@ -4,12 +4,19 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-import { Navigation } from 'swiper/modules';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 
 const HomeHero = () => {
     return (
-        <Swiper  navigation={true} modules={[Navigation]} className="mySwiper">
+        <Swiper
+            navigation={true}
+            modules={[Autoplay, Pagination, Navigation]}
+            className="mySwiper"
+            autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+            }}>
             <SwiperSlide id="hero">
                 <div className="textBox">
                     <h1>The Number <br /> One Flour for <br /> over 100 years!</h1>

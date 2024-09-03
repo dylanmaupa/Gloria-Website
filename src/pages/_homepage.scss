@@ -63,13 +63,14 @@
 
     .wrapper {
         display: flex;
-        padding: 70px;
+        padding: 70px 5rem;
+        margin: 0 15rem;
         align-items: center;
         justify-content: center;
         gap: 40px;
 
         .card {
-            width: 20%;
+            width: 33.333333%;
 
             .img {
                 width: 100%;
@@ -181,10 +182,11 @@
     #recipes{
         .wrapper{
             padding: 70px 40px;
+            margin: 0 5rem;
 
-            .card{
-                width: 25%;
-            }
+            // .card{
+            //     width: 25%;
+            // }
         }
     }
     #contact{
@@ -199,9 +201,10 @@
     #recipes{
         .wrapper{
             padding: 70px 20px;
-            .card{
-                width: 30%;
-            }
+            margin: 0 2rem;
+            // .card{
+            //     width: 30%;
+            // }
         }
     }
 
@@ -217,9 +220,9 @@
         .wrapper{
             padding: 70px 10px;
 
-            .card{
-                width: 35%;
-            }
+            // .card{
+            //     width: 35%;
+            // }
         }
     }
     #contact{
@@ -228,10 +231,19 @@
 }
 
 @media screen and (max-width:500px){
+    #hero{
+        padding: 3rem 20px;
+
+        h1{
+            font-size: 68px;
+        }
+    }
     #recipes{
+        padding: 20px;
         .wrapper{
-            flex-direction: column;
+            // flex-direction: column;
             gap: 40px;
+            margin: 0;
             .card{
                 width: 100%;
             }
@@ -248,7 +260,25 @@
                 .formWrapper:nth-child(5),.submit {
                     grid-column: span 1;
                 }
+                .formWrapper{
+                    input{
+                        padding: 15px;
+                    }
+                }
              }
+        }
+    }
+}
+
+@media screen and (max-width:400px){
+    #recipes{
+        padding: 20px;
+    }
+    #contact{
+        height: 77vh;
+
+        .contact-inner{
+            width: 370px;
         }
     }
 }
