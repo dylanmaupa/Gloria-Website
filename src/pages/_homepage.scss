@@ -4,6 +4,7 @@
     font-weight: 500;
 }
 
+
 #hero {
     display: flex;
     align-items: center;
@@ -35,6 +36,13 @@
         display: flex;
         gap: 10px;
     }
+}
+
+.home2{
+    background: url(/home2.png) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
 }
 
 #about {
