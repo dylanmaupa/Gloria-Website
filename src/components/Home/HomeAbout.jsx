@@ -1,7 +1,7 @@
 import React from 'react'
 import data from '../../../data/db'
 import { Link } from 'react-router-dom'
-import video from '../../assets/images/y2mate.com - Super Slow Motion Particles  Free Stock Footage_1080pFHR.mp4'
+import video from '../../assets/images/6138108-uhd_3840_2160_25fps.mp4'
 
 const HomeAbout = () => {
   return (

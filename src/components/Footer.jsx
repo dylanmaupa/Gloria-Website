@@ -7,6 +7,7 @@ import foot1 from '../assets/images/foot1.png'
 import foot2 from '../assets/images/foot2.png'
 import foot3 from '../assets/images/foot3.png'
 import foot4 from '../assets/images/foot4.png'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
     return (
@@ -25,11 +26,11 @@ const Footer = () => {
                 <div className="footer-cols">
                     <h3>Pages</h3>
                     <ul>
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Menu</li>
-                        <li>Pages</li>
-                        <li>Contact</li>
+                        <Link onClick={() => window.scrollTo(0, 0)} to={'/'}><li>Home</li></Link>
+                        <Link onClick={() => window.scrollTo(0, 0)} to={'/about'}><li>About</li></Link>
+                        <Link onClick={() => window.scrollTo(0, 0)} to={'/recipes'}><li>Recipes</li></Link>
+                        <Link onClick={() => window.scrollTo(0, 0)} to={'/contact'}><li>National Foods</li></Link>
+                        <Link onClick={() => window.scrollTo(0, 0)} to={'/contact'}><li>Contact</li></Link>
                     </ul>
                 </div>
                 <div className="footer-cols">

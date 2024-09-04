@@ -14,7 +14,7 @@ const RecipeCards = () => {
                         <div className="textBox">
                             <h3>{item.title}</h3>
                             <p>{item.desc}</p>
-                            <Link>{item.link}</Link>
+                            <Link to={'/cake-recipe'} onClick={() => window.scrollTo(0, 0)}>{item.link}</Link>
                         </div>
                     </div>
                 )

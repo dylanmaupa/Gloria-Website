@@ -1,9 +1,9 @@
 import React from 'react'
 
-const RecipesHero = () => {
+const RecipesHero = ({title}) => {
   return (
     <section id='heroRec'>
-      <h1>Recipes</h1>
+      <h1>{title}</h1>
     </section>
   )
 }

@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import './pages/homepage';
 @import './pages/recipes';
+@import './pages/aboutpage';
+@import './pages/contactpage';
+@import './components/Recipes/cakerecipe';
 
 * {
     padding: 0;
@@ -185,6 +188,10 @@ footer {
                 color: #fff;
             }
 
+            a{
+                text-decoration: none;
+            }
+
             li {
                 color: #ADB29E;
                 list-style: none;
@@ -298,7 +305,7 @@ footer {
         .footer-inner {
             .footer-cols {
                 .imgBox {
-                    width: 120%;
+                    width: 105%;
 
                     img {
                         width: 100%;

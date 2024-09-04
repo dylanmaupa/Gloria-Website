@@ -5,7 +5,7 @@ import RecipeCards from '../components/Recipes/RecipeCards'
 const Recipes = () => {
   return (
     <>
-     <RecipesHero/>
+     <RecipesHero title={'Recipes'}/>
      <RecipeCards/> 
     </>
   )

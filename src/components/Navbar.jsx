@@ -29,11 +29,19 @@ const Navbar = () => {
           <img src={logo} alt="" />
         </div>
         <ul className={menuOpen ? "nav-links menuActive": "nav-links"}>
-          <NavLink to={'/'}><li>Home</li></NavLink>
-          <li>About</li>
-          <NavLink to={'/recipes'}><li>Recipes</li></NavLink>
-          <li>FAQs</li>
-          <Link className='contactBtn'>Contact Us</Link>
+          <NavLink onClick={() => setMenuOpen(!menuOpen)} to={'/'}>
+            <li>Home</li>
+          </NavLink>
+          <NavLink onClick={() => setMenuOpen(!menuOpen)} to={'/about'}>
+            <li>About</li>
+          </NavLink>
+          <NavLink onClick={() => setMenuOpen(!menuOpen)} to={'/recipes'}>
+            <li>Recipes</li>
+          </NavLink>
+          <NavLink onClick={() => setMenuOpen(!menuOpen)} to={'/contact'} >
+            <li>National Foods</li>
+          </NavLink>
+          <Link onClick={() => setMenuOpen(!menuOpen)} className='contactBtn' to="/contact">Contact Us</Link>
         </ul>
         <LuCakeSlice onClick={() => setMenuOpen(!menuOpen)} className={menuOpen ? "hamburger hamburgerActive" : "hamburger"} />
       </div>
