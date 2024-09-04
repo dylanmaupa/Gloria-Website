@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import logo from '../assets/images/logo.png'
 import icon1 from '../assets/images/fb.png'
 import icon2 from '../assets/images/ig.png'
@@ -29,12 +29,11 @@ const Navbar = () => {
           <img src={logo} alt="" />
         </div>
         <ul className={menuOpen ? "nav-links menuActive": "nav-links"}>
-          <Link to={'/'}><li>Home</li></Link>
+          <NavLink to={'/'}><li>Home</li></NavLink>
           <li>About</li>
-          <li>Recipes</li>
-          <li>Gallery</li>
+          <NavLink to={'/recipes'}><li>Recipes</li></NavLink>
           <li>FAQs</li>
-          <Link>Contact Us</Link>
+          <Link className='contactBtn'>Contact Us</Link>
         </ul>
         <LuCakeSlice onClick={() => setMenuOpen(!menuOpen)} className={menuOpen ? "hamburger hamburgerActive" : "hamburger"} />
       </div>

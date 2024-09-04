@@ -1,0 +1,90 @@
+#heroRec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 60px;
+    background: url(/recipHero.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 13rem 0;
+    width: 100%;
+
+    h1 {
+        font-family: 'Playfair Display', sans-serif;
+        font-size: 72px;
+        font-weight: 500;
+        color: #2C2F24;
+        line-height: 1;
+    }
+}
+
+.recipesWrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8rem;
+    padding: 6rem 5rem;
+    margin: 0 10rem;
+
+    .card {
+        // width: 33.333333%;
+
+        .img {
+            width: 100%;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        h3 {
+            font-size: 20px;
+            margin: 15px 0;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 35px;
+        }
+
+        a {
+            text-decoration: none;
+            padding: 15px 20px;
+            border: 1.5px solid #3634AD;
+            border-radius: 1000000px;
+            font-size: 13px;
+            background: #3634AD;
+            color: #fff;
+            font-weight: 700;
+
+            &:hover {
+                background: #fff;
+                border: 1.5px solid #2C2F24;
+                color: #2C2F24;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1100px) {
+    #heroRec {
+        padding: 8rem 0;
+    }
+}
+@media screen and (max-width:900px) {
+    #heroRec {
+        padding: 8rem 0;
+    }
+}
+@media screen and (max-width:800px) {
+    #heroRec {
+        padding: 8rem 0;
+    }
+}
+@media screen and (max-width:500px) {
+    #heroRec {
+        padding: 8rem 0;
+    }
+}

@@ -10,7 +10,7 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 const HomeHero = () => {
     return (
         <Swiper
-            // navigation={true}
+            navigation={true}
             modules={[Autoplay, Pagination, Navigation]}
             className="mySwiper"
             autoplay={{

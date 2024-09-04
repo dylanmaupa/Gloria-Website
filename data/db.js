@@ -41,6 +41,62 @@ const data = {
             link:'View Recipe',
         },
         
+    ],
+    recipes:[
+        {
+            icon:recp1,
+            title:'Chocolate Cake',
+            desc:'Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna..',
+            link:'View Recipe',
+        },
+        {
+            icon:recp2,
+            title:'Danish Pastry',
+            desc:'Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna..',
+            link:'View Recipe',
+        },
+        {
+            icon:recp3,
+            title:'Lady Locks',
+            desc:'Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna..',
+            link:'View Recipe',
+        },
+        {
+            icon:recp1,
+            title:'Chocolate Cake',
+            desc:'Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna..',
+            link:'View Recipe',
+        },
+        {
+            icon:recp2,
+            title:'Danish Pastry',
+            desc:'Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna..',
+            link:'View Recipe',
+        },
+        {
+            icon:recp3,
+            title:'Lady Locks',
+            desc:'Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna..',
+            link:'View Recipe',
+        },
+        {
+            icon:recp1,
+            title:'Chocolate Cake',
+            desc:'Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna..',
+            link:'View Recipe',
+        },
+        {
+            icon:recp2,
+            title:'Danish Pastry',
+            desc:'Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna..',
+            link:'View Recipe',
+        },
+        {
+            icon:recp3,
+            title:'Lady Locks',
+            desc:'Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna..',
+            link:'View Recipe',
+        },
     ]
 }
 

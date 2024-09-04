@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import './pages/homepage';
+@import './pages/recipes';
 
 * {
     padding: 0;
@@ -98,6 +99,28 @@
     }
 
     a {
+        text-decoration: none;
+
+        &:hover {
+            li{
+                color: #3634AD;
+            }
+        }
+    }
+
+    a.active {
+        padding: 10px 20px;
+        // border: 1.5px solid #2C2F24;
+        background: #8EA5E1;
+        border-radius: 10000px;
+        font-weight: 700;
+
+        // li{
+        //     color: #fff;
+        // }
+    }
+
+    a.contactBtn {
         font-size: 16px;
         text-decoration: none;
         color: #2C2F24;
@@ -116,7 +139,6 @@
 
 footer {
     background: #1F286E;
-    margin-top: 25rem;
     padding: 80px;
 
     .footer-inner {
@@ -260,7 +282,8 @@ footer {
             left: 5px;
             right: 5px;
         }
-        .nav-links.menuActive{
+
+        .nav-links.menuActive {
             transform: translateY(270px);
         }
 
