@@ -6,7 +6,9 @@ const ContactForm = () => {
 
             <div className="contact-inner">
                 <h2>Get in touch</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien.</p>
+                <p>For inquiries, feedback, or more detailed information, please fill out the form below, and we'll get back to you as soon as possible.
+                    We look forward to connecting with you!
+                </p>
                 <form action="#">
                     <div className='formWrapper'>
                         <label htmlFor="">First Name</label>

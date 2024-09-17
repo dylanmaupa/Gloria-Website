@@ -23,8 +23,8 @@ const HomeHero = () => {
                     <p>It will rise, and you will shine!</p>
                 </div>
                 <div className="btns">
-                    <Button title={"Let's Bake!"} />
-                    <Button title={'Contact Us'} />
+                    <Button path={''} title={"Explore Our Flours"} />
+                    <Button path={'/about'} title={'Discover Our Story'} />
                 </div>
             </SwiperSlide>
             <SwiperSlide id="hero" className='home2'>
@@ -33,8 +33,8 @@ const HomeHero = () => {
                     <p>It will rise, and you will shine!</p>
                 </div>
                 <div className="btns">
-                    <Button title={"Let's Bake!"} />
-                    <Button title={'Contact Us'} />
+                    <Button path={''} title={"Let's Bake"} />
+                    <Button path={'/contact'} title={'Contact Us'} />
                 </div>
             </SwiperSlide>
         </Swiper>

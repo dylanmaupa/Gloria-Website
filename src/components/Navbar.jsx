@@ -25,9 +25,9 @@ const Navbar = () => {
         </div>
       </div>
       <div className="navbar">
-        <div className="logo">
+        <Link to={'/'} className="logo">
           <img src={logo} alt="" />
-        </div>
+        </Link>
         <ul className={menuOpen ? "nav-links menuActive": "nav-links"}>
           <NavLink onClick={() => setMenuOpen(!menuOpen)} to={'/'}>
             <li>Home</li>
