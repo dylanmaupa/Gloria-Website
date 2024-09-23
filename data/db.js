@@ -106,14 +106,33 @@ const data = {
         {
             question: 'Can I learn more about your business?',
             answer: 'We are a brand specializing in flour production, offering a diverse range of products:',
-            point: "All-Purpose Flour",
-            point2: "Self-Raising Flour",
-            point3: "Cake Flour",
-            point4: "Self-Raising Cake Flour",
-            point5: "High-Fiber Wheat Flour",
-            point6: "Bran Muffin Quick Mix",
-            point7: "Vanilla Muffin Quick Mix",
-            point8: "Chocolate Muffin Quick Mix",
+            point: [
+                {
+                    point: "All-Purpose Flour",
+                },
+                {
+                    point: "Self-Raising Flour",
+                },
+                {
+                    point: "Cake Flour",
+                },
+                {
+                    point: "Self-Raising Cake Flour",
+                },
+                {
+                    point: "High-Fiber Wheat Flour",
+                },
+                {
+                    point: "Bran Muffin Quick Mix",
+                },
+                {
+                    point: "Vanilla Muffin Quick Mix",
+                },
+                {
+                    point: "Chocolate Muffin Quick Mix",
+                },
+
+            ]
         },
         {
             question: 'What products do you offer?',

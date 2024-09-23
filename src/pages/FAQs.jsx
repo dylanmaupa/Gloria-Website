@@ -26,14 +26,10 @@ const FAQs = () => {
                 <div className={selected === i ? 'content show' : 'content'}>
                   <p>{faq.answer}</p>
                   <ul>
-                    <li>{faq.point}</li>
-                    <li>{faq.point2}</li>
-                    <li>{faq.point3}</li>
-                    <li>{faq.point4}</li>
-                    <li>{faq.point5}</li>
-                    <li>{faq.point6}</li>
-                    <li>{faq.point7}</li>
-                    <li>{faq.point8}</li>
+                    {faq.point && faq.point.map(point => {
+                      return <li>{point.point}</li>
+                    })}
+                    
                   </ul>
                 </div>
               </div>

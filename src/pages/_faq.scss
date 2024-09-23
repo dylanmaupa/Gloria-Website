@@ -33,11 +33,13 @@
                 transition: .1s cubic-bezier(1,0,1,0);
 
                 ul{
-                    // margin-top: 20px;
-                    list-style: circle;
-
+                    margin-top: 10px;
+                    margin-left: 10px;
+                    
                     li{
-                        list-style: decimal !important;
+                        
+                        list-style-type:disc;
+                        list-style-position: inside;
                     }
                 }
             }
