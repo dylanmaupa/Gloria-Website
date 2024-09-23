@@ -7,6 +7,7 @@ import Recipes from './pages/Recipes'
 import About from './pages/About'
 import Contactpage from './pages/Contactpage'
 import ChocolateCakeRecipe from './components/Recipes/ChocolateCakeRecipe'
+import FAQs from './pages/FAQs'
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
           <Route exact path='/recipes' element={<Recipes/>} />
           <Route exact path='/contact' element={<Contactpage/>} />
           <Route exact path='/cake-recipe' element={<ChocolateCakeRecipe/>} />
+          <Route exact path='/faqs' element={<FAQs/>} />
         </Routes>
         <Footer/>
       </Router>

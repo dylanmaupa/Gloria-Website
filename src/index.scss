@@ -5,6 +5,7 @@
 @import './pages/aboutpage';
 @import './pages/contactpage';
 @import './components/Recipes/cakerecipe';
+@import './pages/faq';
 
 * {
     padding: 0;
@@ -157,6 +158,7 @@ footer {
 
             h1 {
                 color: #fff;
+                text-align: left;
             }
 
             p {

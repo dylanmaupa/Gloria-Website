@@ -14,23 +14,23 @@ const HomeHero = () => {
             modules={[Autoplay, Pagination, Navigation]}
             className="mySwiper"
             autoplay={{
-                delay: 2500,
+                delay: 5000,
                 disableOnInteraction: false,
             }}>
             <SwiperSlide id="hero">
                 <div className="textBox">
                     <h1>The Number <br /> One Flour for <br /> over 100 years!</h1>
-                    <p>It will rise, and you will shine!</p>
+                    <p>It rises, you shine!</p>
                 </div>
                 <div className="btns">
                     <Button path={''} title={"Explore Our Flours"} />
-                    <Button path={'/about'} title={'Discover Our Story'} />
+                    <Button path={'/recipes'} title={'Recipes'} />
                 </div>
             </SwiperSlide>
             <SwiperSlide id="hero" className='home2'>
                 <div className="textBox">
                     <h1>The Number <br /> One Flour for <br /> over 100 years!</h1>
-                    <p>It will rise, and you will shine!</p>
+                    <p>It rises, you shine!</p>
                 </div>
                 <div className="btns">
                     <Button path={''} title={"Let's Bake"} />

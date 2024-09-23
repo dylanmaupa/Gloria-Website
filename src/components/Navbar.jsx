@@ -18,17 +18,17 @@ const Navbar = () => {
           <p>info@gloria.co.zw</p>
         </div>
         <div className="socials">
-          <img src={icon1} alt="" />
-          <img src={icon2} alt="" />
-          <img src={icon3} alt="" />
-          <img src={icon4} alt="" />
+          <Link to={''}><img src={icon1} alt="" /></Link>
+          <Link to={''}><img src={icon2} alt="" /></Link>
+          {/* <Link to={''}><img src={icon3} alt="" /></Link> */}
+          <Link to={''}><img src={icon4} alt="" /></Link>
         </div>
       </div>
       <div className="navbar">
         <Link to={'/'} className="logo">
           <img src={logo} alt="" />
         </Link>
-        <ul className={menuOpen ? "nav-links menuActive": "nav-links"}>
+        <ul className={menuOpen ? "nav-links menuActive" : "nav-links"}>
           <NavLink onClick={() => setMenuOpen(!menuOpen)} to={'/'}>
             <li>Home</li>
           </NavLink>
@@ -40,6 +40,9 @@ const Navbar = () => {
           </NavLink>
           <NavLink onClick={() => setMenuOpen(!menuOpen)} to={'/contact'} >
             <li>National Foods</li>
+          </NavLink>
+          <NavLink onClick={() => setMenuOpen(!menuOpen)} to={'/faqs'} >
+            <li>FAQs</li>
           </NavLink>
           <Link onClick={() => setMenuOpen(!menuOpen)} className='contactBtn' to="/contact">Contact Us</Link>
         </ul>

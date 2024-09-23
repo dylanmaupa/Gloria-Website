@@ -15,12 +15,12 @@ const Footer = () => {
             <div className="footer-inner">
                 <div className="logo">
                     <h1>Gloria</h1>
-                    <p>In the new era of technology we look a in the future with certainty and pride to for our company and.</p>
+                    <p>It rises, you shine!.</p>
                     <div className="socials">
-                        <img src={icon1} alt="" />
-                        <img src={icon2} alt="" />
-                        <img src={icon3} alt="" />
-                        <img src={icon4} alt="" />
+                        <Link to={''}><img src={icon1} alt="" /></Link>
+                        <Link to={''}><img src={icon2} alt="" /></Link>
+                        {/* <Link to={''}><img src={icon3} alt="" /></Link> */}
+                        <Link to={''}><img src={icon4} alt="" /></Link>
                     </div>
                 </div>
                 <div className="footer-cols">
