@@ -11,12 +11,18 @@
             box-shadow: 0 0 5px #eeeeee;
             padding: 20px 20px;
             margin-bottom: 10px;
+            border-radius: 8px;
 
             .title {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
                 cursor: pointer;
+                span{
+                font-weight: 600;
+                color: #3634AD;
+                font-size:24px;
+                }
             }
 
             .content {
@@ -40,6 +46,24 @@
                         
                         list-style-type:disc;
                         list-style-position: inside;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:500px) {
+    .wrapperAC{
+        .accordion{
+            width: 85vw;
+
+            .item{
+                padding: 15px;
+                .title{
+
+                    h2{
+                        font-size: 20px;
                     }
                 }
             }
